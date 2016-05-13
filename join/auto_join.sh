@@ -18,7 +18,7 @@ echo "Removing old container"
 docker rm -f join
 
 if [[ -z $swarm_version ]]; then
-        export swarm_version="latest"
+        export swarm_version="v6"
 fi;
 
 echo "Using version: $swarm_version"
