@@ -2,10 +2,16 @@
 
 **Live IoT cluster demonstration**
 
-Load-balanced Node.js service with LED lights to show when an upstream server is being utilized.
+Load-balanced Python flask service with LED lights to show when an upstream server is being utilized. This is designed to be both educational and to serve as an example of what can be done when combining Docker with the Raspberry PI.
 
-* Hardware: Raspberry PI Zero
+* Hardware: Raspberry PI Zero [Find stock here](http://stockalert.alexellis.io/)
 * Software: Arch Linux ARM, Docker, Swarm, pre-built ARM images.
+
+### Demo on Instagram:
+
+Check out the demo - I start with load from Apache Bench then in the second half hit the load balancer manually through curl.
+
+https://www.instagram.com/p/BFgARoFgvIQ/
 
 ### Step 1
 
@@ -33,9 +39,13 @@ $ ./auto_join.sh
 ### Step 3 Start Nginx
 
 ```
-$ docker run -e SWARM_URI=192.168.0.100:2376 -e LABEL_FILTER=gpio_count -d -p 80:80 alexellis2/nginx-dynamic:v6
+$ ./start_lights.sh 
 ```
 
-Use `curl` to access the Nginx instance.
+Use `curl` to access the Nginx instance or `ab` to add some load such as:
+
+```
+ab -c 1 -n 100 http://192.168.0.100/
+```
 
 
