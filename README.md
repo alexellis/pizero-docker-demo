@@ -5,7 +5,7 @@
 Load-balanced Python flask service with LED lights to show when an upstream server is being utilized. This is designed to be both educational and to serve as an example of what can be done when combining Docker with the Raspberry PI.
 
 * Hardware: Raspberry PI Zero [Find stock here](http://stockalert.alexellis.io/)
-* Software: Arch Linux ARM, Docker, Swarm, pre-built ARM images.
+* Software: Arch Linux ARM, Docker, Swarm, [pre-built ARM images](https://github.com/alexellis/docker-arm/tree/master/images/armv6).
 
 *Honoured to have had this [retweeted by Solomon Hykes](https://twitter.com/alexellisuk/status/732497170234937344), the creator of Docker*
 
@@ -89,4 +89,7 @@ Use `curl` to access the Nginx instance or `ab` to add some load such as:
 ab -c 1 -n 100 http://192.168.0.100/
 ```
 
+### Feedback or questions?
+
+Send me a tweet at @alexellisuk
 
