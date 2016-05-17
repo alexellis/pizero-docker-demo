@@ -7,9 +7,13 @@ Load-balanced Python flask service with LED lights to show when an upstream serv
 * Hardware: Raspberry PI Zero [Find stock here](http://stockalert.alexellis.io/)
 * Software: Arch Linux ARM, Docker, Swarm, pre-built ARM images.
 
+*Honoured to have had this [retweeted by Solomon Hykes](https://twitter.com/alexellisuk/status/732497170234937344), the creator of Docker*
+
 ### Demo on Instagram:
 
-Check out the demos
+![Screenshot from Instagram](https://raw.githubusercontent.com/alexellis/pizero-docker-demo/master/static/cluster-mid-flow.png)
+
+Check out the demos:
 
 * Demo #1
 
