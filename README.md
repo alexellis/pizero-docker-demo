@@ -9,22 +9,11 @@ Load-balanced Python flask service with LED lights to show when an upstream serv
 
 *Honoured to have had this [retweeted by Solomon Hykes](https://twitter.com/alexellisuk/status/732497170234937344), the creator of Docker*
 
-### Demo on Instagram:
+### Watch the video
 
-![Screenshot from Instagram](https://raw.githubusercontent.com/alexellis/pizero-docker-demo/master/static/cluster-mid-flow.png)
+In the video I give a quick explanation of the setup then use `curl` and Apache Bench `ab` to simulate a real-world load on the cluster.
 
-Check out the demos:
-
-* Demo #1
-
-I talk you through hitting the load balancer with 1, 2, 3 and 6 concurrent requests to show how the lights respond.
-
-https://www.instagram.com/p/BFgErp6AvOE/
-
-* Demo #2
-
-I start with load from Apache Bench then in the second half hit the load balancer manually through curl.
-https://www.instagram.com/p/BFgARoFgvIQ/
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IaKRqBRq6CE" frameborder="0" allowfullscreen></iframe>
 
 ### Step 1
 
