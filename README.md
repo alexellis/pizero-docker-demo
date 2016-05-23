@@ -56,6 +56,21 @@ ExecStart=/usr/bin/docker daemon -H fd:// -H tcp://0.0.0.0:2375 --cluster-advert
 
 > Important note: `tcp://0.0.0.0:2375` is insecure and should only be used with an air-gap or in an isolated dev environment. It means anyone with access could potentially run any code on your machine.
 
+### Step 2b Assign static IP addresses to your nodes (optional)
+
+Edit `/etc/systemd/network/eth0.network` and replace it with the following (change the IP address):
+
+```
+[Match]
+Name=eth0
+
+[Network]
+Address=192.168.0.101/24
+Gateway=192.168.0.1
+DNS=8.8.8.8
+IPForward=ipv4
+```
+
 ### Step 3 Start the IoTNode containers and Nginx
 
 ```
