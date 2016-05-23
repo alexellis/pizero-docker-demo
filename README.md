@@ -11,9 +11,11 @@ Load-balanced Python flask service with LED lights to show when an upstream serv
 
 ### Watch the video
 
+![Click link for video](https://pbs.twimg.com/media/CjDxIg-WEAAQ1dk.jpg)
+
 In the video I give a quick explanation of the setup then use `curl` and Apache Bench `ab` to simulate a real-world load on the cluster.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IaKRqBRq6CE" frameborder="0" allowfullscreen></iframe>
+[View on YouTube](https://www.youtube.com/embed/IaKRqBRq6CE)
 
 ### Step 1
 
