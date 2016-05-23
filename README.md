@@ -44,29 +44,17 @@ $ ./auto_join.sh
 
 I use a shell script called `run.sh` for this to make running multiple commands easier.
 
+[View run.sh](https://github.com/alexellis/pizero-docker-demo/blob/master/consul/run.sh)
+
+To enable all the clustering features we have to specify a KVP store for each of our agents. This will be the consul instance we started on the manager.
+
+Edit `/usr/lib/systemd/system/docker.service` and update the ExecStart line:
+
 ```
-#!/bin/sh
-
-hosts=(192.168.0.100
-192.168.0.101
-192.168.0.102
-192.168.0.103
-)
-
-exec_cmd() {
- echo "[$1] $2"
- echo ""
- ssh $1 $2
- echo ""
-}
-
-for host in "${hosts[@]}"
-do
-    exec_cmd $host "$@"
-done
+ExecStart=/usr/bin/docker daemon -H fd:// -H tcp://0.0.0.0:2375 --cluster-advertise eth0:2375 --cluster-store consul://192.168.0.100:8500
 ```
 
-*run.sh*
+> Important note: `tcp://0.0.0.0:2375` is insecure and should only be used with an air-gap or in an isolated dev environment. It means anyone with access could potentially run any code on your machine.
 
 ### Step 3 Start the IoTNode containers and Nginx
 
