@@ -44,6 +44,10 @@ $ ./auto_join.sh
 
 I use a shell script called `run.sh` for this to make running multiple commands easier.
 
+```
+./consul_/agent_run "cd pizero-docker-demo/join && ./auto_join.sh"
+``
+
 [View run.sh](https://github.com/alexellis/pizero-docker-demo/blob/master/consul/run.sh)
 
 To enable all the clustering features we have to specify a KVP store for each of our agents. This will be the consul instance we started on the manager.
