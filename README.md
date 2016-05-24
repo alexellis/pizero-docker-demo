@@ -46,7 +46,7 @@ I use a shell script called `run.sh` for this to make running multiple commands 
 
 ```
 ./consul_/agent_run "cd pizero-docker-demo/join && ./auto_join.sh"
-``
+```
 
 [View run.sh](https://github.com/alexellis/pizero-docker-demo/blob/master/consul/run.sh)
 
