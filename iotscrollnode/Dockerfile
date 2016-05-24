@@ -1,4 +1,5 @@
 FROM alexellis2/scroll-phat
+RUN pip install flask
 
 ADD lights.py ./
 ADD app.py ./
