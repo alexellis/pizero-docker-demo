@@ -11,7 +11,7 @@ Load-balanced Python flask service with LED lights to show when an upstream serv
 
 ### Technical Deep Dive
 
-View the [technical Deep Dive](http://blog.alexellis.io/iot-docker-cluster/) here on my blog.
+Please read the [technical Deep Dive](http://blog.alexellis.io/iot-docker-cluster/) here on my blog for all the details and conceptual diagrams.
 
 ### Watch me on Pimoroni's live YouTube TV show
 
@@ -26,6 +26,8 @@ In *Bilge Tank 039 - Clusters, Docker, Brambles & Raspberry Pi Supercomputers!* 
 In the video I give a quick explanation of the setup then use `curl` and Apache Bench `ab` to simulate a real-world load on the cluster.
 
 [View on YouTube](https://www.youtube.com/embed/IaKRqBRq6CE)
+
+## Installation / configuration
 
 ### Step 1
 
