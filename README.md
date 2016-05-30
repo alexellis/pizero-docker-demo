@@ -13,7 +13,13 @@ Load-balanced Python flask service with LED lights to show when an upstream serv
 
 View the [technical Deep Dive](http://blog.alexellis.io/iot-docker-cluster/) here on my blog.
 
-### Watch the video
+### Watch me on Pimoroni's live YouTube TV show
+
+In *Bilge Tank 039 - Clusters, Docker, Brambles & Raspberry Pi Supercomputers!* I talk Docker, what it means to be a Docker Captain and all about Docker Swarm.
+
+[BilgeTank 039 on YouTube](https://www.youtube.com/watch?v=ASYnWV0Km_A)
+
+### Watch the demo
 
 ![Click link for video](https://pbs.twimg.com/media/CjDxIg-WEAAQ1dk.jpg)
 
