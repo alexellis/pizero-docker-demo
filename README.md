@@ -15,7 +15,7 @@ Please read the [technical Deep Dive](http://blog.alexellis.io/iot-docker-cluste
 
 ### Watch me on Pimoroni's live YouTube TV show
 
-In *Bilge Tank 039 - Clusters, Docker, Brambles & Raspberry Pi Supercomputers!* I talk Docker, what it means to be a Docker Captain and all about Docker Swarm.
+In *Bilge Tank 039 - Clusters, Docker, Brambles & Raspberry Pi Supercomputers!* I talk Docker, what it means to be a Docker Captain and all about Docker Swarm. I also demo the full Hack with an additional Raspberry Pi board making 5 nodes in total.
 
 [BilgeTank 039 on YouTube](https://www.youtube.com/watch?v=ASYnWV0Km_A)
 
@@ -25,7 +25,7 @@ In *Bilge Tank 039 - Clusters, Docker, Brambles & Raspberry Pi Supercomputers!* 
 
 In the video I give a quick explanation of the setup then use `curl` and Apache Bench `ab` to simulate a real-world load on the cluster.
 
-[View on YouTube](https://www.youtube.com/embed/IaKRqBRq6CE)
+[View Demo on YouTube](https://www.youtube.com/embed/IaKRqBRq6CE)
 
 ## Installation / configuration
 
