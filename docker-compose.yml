@@ -1,9 +1,31 @@
 version: "2.0"
 services:
-  nginx:
-    image: alexellis2/nginx_dynamic:v6
-    environment:
-     SWARM_URI: 192.168.0.100:2376
-     LABEL_FILTER: iotnode
+  balance:
+    build:
+      context: "./balance/"
     ports:
-      - "80:80"
+     - "80:80"
+    networks:
+      - frontend
+
+  iot_node:
+    build:
+      context: "./iotnode"
+    ports:
+     - 5000/TCP    
+    depends_on:
+      - balance
+    privileged: true
+    networks:
+      frontend:
+        aliases:
+          - iot_worker
+      backend:       
+        aliases:
+          - web_worker_backend
+
+networks:  
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
